@@ -1,6 +1,9 @@
 .jumbotron {
 	background-color: #436a88;
 	margin-left: 0;
+	position:fixed;
+	width:100%;
+	z-index: 1;
 }
 
 .float-left {
@@ -30,13 +33,14 @@
 	text-align: center;
 }
 body{
-	background-image: url(https://zellox.com/wp-content/uploads/2016/02/background-image-html.jpg)
+	background-image: url(/assets/images/background.jpg)
 }
 .burger-container{
 	background-color: white;
 }
 .top-row{
 margin-left:7%;
+margin-top:300px;
 }
 .middle-row{
 margin-left:7%;
