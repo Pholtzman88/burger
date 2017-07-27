@@ -31,7 +31,6 @@ var orm = {
 		var query = "INSERT INTO "+ table;
 		query += " (" + col.toString() + ") ";
 		query += "VALUES (?) ";
-		console.log(query)
 		//connect to mysql and perform query
 		connection.query(query , val , function(err, result){
 			if (err) throw err;
