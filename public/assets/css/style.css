@@ -1,0 +1,62 @@
+.jumbotron {
+	background-color: #436a88;
+	margin-left: 0;
+}
+
+.float-left {
+	float: left;
+	margin:10px 10px;
+}
+.btn {
+	float:right;
+	margin:10px 10px;
+}
+#burgerImg {
+	height:8%;
+	width: 8%;
+	margin-left:46%;
+}
+#burgerInput{
+	font-size: 2.5em;
+	margin-left:33.3%;
+	text-align:center;
+	margin-top:2%;
+	text-align: center;
+}
+
+.title{
+	background-color:#436a88;
+	color:white;
+	text-align: center;
+}
+body{
+	background-image: url(https://zellox.com/wp-content/uploads/2016/02/background-image-html.jpg)
+}
+.burger-container{
+	background-color: white;
+}
+.top-row{
+margin-left:7%;
+}
+.middle-row{
+margin-left:7%;
+}
+.row{
+	margin-bottom: 10px;
+}
+.faded{
+	opacity: .5;
+}
+.burger-id-container{
+	background-color:gray;
+	width:15px;
+	height:15px;
+	text-align:center;
+	border-radius: 30%;
+	border:2px solid #436a88;
+}
+.burger-id{
+	position:relative;
+	bottom:20px;
+	right:10px;
+}

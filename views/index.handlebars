@@ -1,0 +1,58 @@
+
+	<!--header section -->
+	<div class="jumbotron">
+		<img id="burgerImg" src="/assets/images/burger.PNG" type="submit">	
+		<form action="burgers/create" method="POST">
+			<input placeholder="create a burger" id="burgerInput" name="name"></input>
+		</form>
+	</div>
+	<!--main body-->
+	<div class="container">
+	<!--top row titles -->
+	<div class="row top-row">
+		<div class="col-sm-5 title">
+			<h2>Available Burgers</h2>
+		</div>
+		<!--used to seperate left and right columns-->
+		<div class="col-sm-1">
+		</div>
+		<div class="col-sm-5 title right">
+			<h2>Devoured Burgers</h2>
+		</div>
+	</div>
+	<!--middle row displays burgers-->
+	<div class="row middle-row">
+		<!--available burgers section -->
+		<div class="col-sm-5">
+			{{#each burgers}}
+			{{#unless this.devoured}}
+				<div class="burger-container row">
+					<div class="panel-body float-left burger-id-container">
+	    				<h4 class="burger-id">{{this.id}}</h4>
+	  				</div>
+						<h3 class="float-left">{{this.burger_name}}</h3>
+						<form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
+							<button class="btn btn-primary float-left">DEVOUR!</button>
+						</form>
+				</div>
+				{{/unless}}
+			{{/each}}
+		</div>	
+		<!--used to seperate left and right columns-->
+		<div class="col-sm-1">
+		</div>
+		<!--devoured burgers section -->
+		<div class="col-sm-5 right">
+			{{#each burgers}}
+			{{#if this.devoured}}
+				<div class="burger-container row ">
+					<div class="panel-body float-left burger-id-container">
+	    				<h4 class="burger-id faded">{{this.id}}</h4>
+	  				</div>
+						<h3 class="float-left faded">{{this.burger_name}}</h3>
+				</div>
+				{{/if}}
+			{{/each}}
+		</div>	
+	</div>	
+</div>
