@@ -1,11 +1,15 @@
 .jumbotron {
 	background-color: #436a88;
-	margin-left: 0;
+	margin: 0;
 	position:fixed;
 	width:100%;
 	z-index: 1;
-}
+	padding: 15px 15px 30px 15px;
 
+}
+/**{
+	border:1px solid black;
+}*/
 .float-left {
 	float: left;
 	margin:10px 10px;
@@ -22,28 +26,38 @@
 #burgerInput{
 	font-size: 2.5em;
 	margin-left:33.3%;
+	margin-top:5px;
 	text-align:center;
-	margin-top:2%;
-	text-align: center;
 }
 
 .title{
 	background-color:#436a88;
 	color:white;
 	text-align: center;
+	width:38%;
+	margin-left:6%;
+	border-radius: 50%;
+}
+.title-right{
+	margin-left:12%;
 }
 body{
 	background-image: url(/assets/images/background.jpg)
 }
 .burger-container{
 	background-color: white;
+	margin-left:10%;
+	margin-right:10.25%;
 }
+
 .top-row{
-margin-left:7%;
-margin-top:300px;
+margin-top:172.5px;
+position:fixed;
+width:92.5%;
+z-index: 1;
 }
 .middle-row{
-margin-left:7%;
+margin-top:250px;
 }
 .row{
 	margin-bottom: 10px;
@@ -68,5 +82,5 @@ margin-left:7%;
 	color:white;
 	position: relative;
 	left: 10px;
-	bottom: 200px;
+	bottom: 130px;
 }
